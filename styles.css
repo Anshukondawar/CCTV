@@ -1,0 +1,558 @@
+/* General Reset */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logo{
+    
+        height: 15vh;
+        margin-right: 15px;
+    
+}
+
+/* .nav.ul {
+
+
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav .nav-item {
+    margin: 0 8px;
+}
+
+.nav .nav-link {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav .nav-link:hover {
+    color: #ffd700;
+} */
+header {
+    /* background-color: #007bff; */
+    background-color: #791919;
+}
+.banner {
+    background: url('https://abbeysecurity.co.uk/wp-content/uploads/2020/03/CCTV-Cameras-scaled.jpeg') no-repeat center center/cover;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .display-4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    
+}
+
+/* header h1 {
+    font-size: 1rem;
+}
+header .container{
+   align-content: center;
+}
+
+header .btn-outline-light {
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+}
+
+header .btn-outline-light:hover {
+    background-color: #fff;
+    color: #007bff;
+} */
+
+
+/* Banner Section */
+/* .banner {
+    background: url('https://elv.co.in/wp-content/uploads/2020/08/Hikvision-cctv-camera-dealers-Chennai.png') no-repeat center center/cover;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} */
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.banner .container {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 8em;
+    margin-right: 20em;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+.banner .btn {
+   
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
+.banner .container .btn{
+     margin-left: 20em; 
+    background-color: #791919;
+}
+
+.banner .btn:hover {
+    background-color: #5a1212;
+    color: white;
+}
+@media (max-width: 575.98px) {
+    /* .banner{
+        width: 115%;
+    } */
+    .banner h2 {
+        font-size: 2rem; /* Smaller heading for mobile */
+    }
+
+    .banner p {
+        
+            font-size: 0.65rem;
+            text-align: start;
+        
+            margin-top: -0.75rem !important;
+    }
+
+    .banner .btn {
+        width: 25%;
+        font-size: 0.5rem;
+        padding: 0.25rem 0.25rem !important;
+        margin-top: 0rem !important;
+        margin-left: 3rem !important;
+    }
+
+    .banner .container {
+        margin: 0; /* Remove excessive margins */
+        margin-top: -2rem !important;
+    }
+   .banner .container .display-4 {
+        font-size: 0.75rem !important;
+        font-weight: 600 !important;
+        text-align: justify;
+    }
+    
+}
+
+/* Medium Screens (Tablets - 576px to 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .banner h2 {
+        font-size: 2.5rem;
+    }
+
+    .banner p {
+        font-size: 1.1rem;
+    }
+
+    .banner .btn {
+        font-size: 1.1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .banner .container {
+        margin: 0 auto; /* Center the container */
+        width: 90%; /* Adjust container width */
+    }
+}
+
+/* Large Screens (Desktops - 768px and above) */
+@media (min-width: 768px) and (max-width:1000px){
+    .banner h2 {
+        font-size: 3rem;
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+    }
+
+    .banner .btn {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
+
+    .banner .container {
+        margin-bottom: 8em;
+        margin-right: 20em;
+        max-width: 80%; /* Restrict container width */
+    }
+
+    .banner .btn {
+        margin-left: 20em;
+    }
+}
+.py-5{
+    color: #333;
+}
+/* Services Section */
+#services {
+ background-color: #333; 
+    /* background-color: #791919; */
+
+} 
+
+#services h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+#services p {
+    font-size: 1rem;
+    color: white;
+}
+
+#services .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#services .card-body h5{
+    color: #333;
+    font-weight: 700;
+}
+#services .card-body p{
+    color: #333 !important;
+}
+
+#services .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#services img {
+    /* width: 60px; */
+    height: 60px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+footer p, footer a {
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer .bi {
+    font-size: 1.5rem;
+}
+
+footer .bi:hover {
+    color: #007bff;
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+   
+}
+
+h1, h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* About Section Styles */
+/* About Section Styles */
+section.py-5 {
+    background-color: #791919;; /* Light background */
+    color: #333; /* Dark text color */
+    padding: 4rem 0; /* Padding for top and bottom */
+}
+
+.py-5 h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.py-5  h1,p,h3,li{
+    color: #fff !important;
+}
+.py-5 p {
+    font-size: 1.1rem;
+    
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+.py-5 h3{
+    margin-bottom: 12px;
+}
+
+.py-5 .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.py-5 .col-md-6 {
+    padding: 15px;
+    flex: 0 0 50%;
+}
+
+.py-5 .img-fluid {
+    width: 100%;
+    height: 50vh;
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional soft shadow */
+}
+
+.py-5 h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #333; /* Dark color for subheadings */
+}
+
+.py-5 ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+.py-5 ul li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .py-5 .col-md-6 {
+        flex: 0 0 100%;
+        padding: 10px;
+    }
+
+    .py-5 h1 {
+        font-size: 2rem;
+    }
+
+    .py-5 h3 {
+        font-size: 1.5rem;
+    }
+
+    .py-5 p {
+        font-size: 1rem;
+    }
+
+    .py-5 ul li {
+        font-size: 1rem;
+    }
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #791919;
+}
+
+#testimonials h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+#testimonials p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#testimonials .card {
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#testimonials .card-body img{
+   height: 40vh;
+   width: 100%;
+}
+#testimonials .card-body p{
+    color: #555 !important;
+ }
+#testimonials .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#testimonials .card-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+#testimonials .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 1rem;
+}
+.nav-link {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Hamburger Menu Icon */
+.d-lg-block {
+   
+    font-size: 16px !important;
+    width: 23vw;
+}
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    display: block;
+    position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+}
+
+.navbar-toggler-icon::before {
+    top: -8px;
+}
+
+.navbar-toggler-icon::after {
+    top: 8px;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 575.98px) {
+    .d-lg-block {
+        font-size: 11px !important;
+        margin-left: -4rem !important;
+       
+    }
+    .navbar-collapse {
+        text-align: center;
+       
+        padding: 1rem;
+    }
+    .py-5 h1,h3 {
+        font-size: 1rem;
+    }
+    .py-5 p {
+        font-size: 0.75rem;
+    }
+    .py-5 ul li {
+        font-size: 0.75rem;
+    }
+    .nav-link {
+        padding: 0.8rem 0;
+        font-size: 0.75rem;
+    }
+
+    .navbar-toggler-icon {
+        margin: 0;
+    }
+    #services h3 {
+        font-size: 1rem;
+       
+    }
+    #services p {
+        font-size: 0.75rem;
+        
+    }
+    #testimonials h3 {
+        font-size: 1rem;
+    }
+    #testimonials p {
+        font-size: 0.75rem;
+        
+    }
+    #contact{
+        text-align: center;
+    }
+    #contact .row .text-center {
+        margin-top: 15px;
+    }
+    footer h5 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    footer p, footer a {
+        font-size: 0.75rem;
+    }
+}
+
+/* Medium Screens */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .nav {
+        justify-content: center;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: flex !important;
+    }
+
+    .nav {
+        justify-content: flex-end;
+    }
+
+    .btn {
+        margin-left: 1rem;
+    }
+}
+header.container .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  
